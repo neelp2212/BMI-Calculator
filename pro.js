@@ -16,11 +16,11 @@ function converter(x)
 
 function overviewResult(calculation)
 {
-    if (calculation <= 18.6) {
+    if (calculation < 18.6) {
             document.getElementById("print").innerHTML = "Under Weight (Less than 18.6)";
     }
-    else if(calculation > 18.6 && calculation <= 24.9 ){
-            document.getElementById("print").innerHTML = "Normal Range (18.6 and 24.6)";
+    else if(calculation >= 18.6 && calculation <= 24.9 ){
+            document.getElementById("print").innerHTML = "Normal Range (18.6 and 24.9)";
     }
      else {
         document.getElementById("print").innerHTML = "Over Weight (greater than 24.9)";
